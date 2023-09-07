@@ -2,7 +2,9 @@
 
 ### 背景
 
-通过自然语言界面（Natural Language Interface）访问数据是数据库上古大神们就开始畅想的情境，在学术界也一直是专门的研究方向。对我们影响比较大的一篇论文是谷歌在2017年发表的[Analyza](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45791.pdf)，但它是纯基于规则的工程实现。2017年之后，随着[Seq2SQL](https://arxiv.org/pdf/1709.00103.pdf)和[Spider](https://aclanthology.org/D18-1425.pdf)引入经过人工标注的大规模数据集，
+通过自然语言界面（Natural Language Interface）访问数据是数据库上古大神们就开始畅想的情境，在学术界也一直是专门的研究方向。对我们影响比较大的一篇论文是谷歌在2017年发表的[Analyza](https://static.googleusercontent.com/media/research.google.com/zh-CN//pubs/archive/45791.pdf)，但它是纯基于规则的工程实现。2017年之后，随着[Seq2SQL](https://arxiv.org/pdf/1709.00103.pdf)和[Spider](https://aclanthology.org/D18-1425.pdf)引入经过人工标注的大规模数据集，基于AI模型的解决方案如雨后春笋般涌现，从seq2seq到slot filling，从schema linking到pretraining，各种奇淫技巧不一而足。直到ChatGPT横空出世，基于LLM来实现text-to-SQL几乎成了大家的共识。
+
+在项目初期，我们也曾尝试过直接让ChatGPT来生成SQL，但经过多轮prompt优化调整，
 
 ### 为什么需要ChatBI
 
